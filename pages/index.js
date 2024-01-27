@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Entagled</title>
+        <title>Entagle</title>
         <meta
           name="description"
-          content="Landing page for the entagled project"
+          content="Landing page for the entagle project"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
