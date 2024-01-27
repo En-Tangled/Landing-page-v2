@@ -22,12 +22,6 @@ const Home = () => {
 
       <Navbar />
       <Hero />
-      <SectionTitle
-        pretitle="Entagled"
-        title=" Why choose us">
-        Placeholder
-      </SectionTitle>
-      <Benefits data={benefitOne} />
       <Footer />
     </>
   );
