@@ -12,18 +12,13 @@ const Hero = () => {
               Monetize your time
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-            <p>Everything had been financialized except for Time. &nbsp; Finally trade time as a commodity.
-            &nbsp; Be amongst the earliest adopters and users.</p>
+            <p>Everything had been financialized except for Time. Finally trade time as a commodity. Be amongst the earliest adopters and users.</p>
             Join the limited waitlist now!
             </p>
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <a
-                href="https://github.com/En-Tangled/Landing-page-v2"
-                target="_blank"
-                rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
-                <span> Register for the waitlist</span>
-              </a>
+              <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">
+                Register for the waitlist
+              </button>
             </div>
           </div>
         </div>
