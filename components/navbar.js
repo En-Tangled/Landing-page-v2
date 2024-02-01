@@ -14,18 +14,18 @@ const Navbar = () => {
             <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
               <Link href="/">
                 <>
-                  {theme === "dark" && (
+                  {theme &&(theme === "dark") && (
                     <img
                       src="/assets/PNG/With Wordmark - Dark - Default@10x.png"
                       alt="logo"
-                      className="w-full h-12"
+                      className="w-15 h-12"
                     />
                   )}
                   {theme === "light" && (
                     <img
                       src="/assets/PNG/With Wordmark - Light - Default@10x.png"
                       alt="logo"
-                      className="w-full h-12"
+                      className="w-15 h-12"
                     />
                   )}
                 </>

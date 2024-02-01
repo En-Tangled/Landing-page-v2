@@ -7,6 +7,10 @@ const ThemeChanger = () => {
 
   // When mounted on client, now we can show the UI
   useEffect(() => setMounted(true), []);
+  // set dark mode as default theme
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
 
   if (!mounted) return null;
 
