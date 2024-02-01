@@ -6,7 +6,7 @@ import { FadingImageDisplacement } from './transition/imageFadeMaterialDisplacem
 
 const Hero = () => {
   let _height = 616;
-  if (window.innerWidth < 768) {
+  if (typeof window !== 'undefined' && window.innerWidth < 768) {
     _height = 350;
   }
   return (
@@ -29,6 +29,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
+          {/* make height equal to width */}
           <div style={{ position: "relative",width: "100%", height: _height }} className="object-cover ">
           <Canvas style={{borderRadius: "60px"}} >
                 <ambientLight />
