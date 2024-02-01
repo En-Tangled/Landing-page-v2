@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/entangled.png";
+import { Canvas } from '@react-three/fiber';
+import { FadingImageDisplacement } from './transition/imageFadeMaterialDisplacement';
 
 const Hero = () => {
   return (
@@ -23,8 +25,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <Image
+          <div style={{ position: "relative", width: 617, height: 616 }} className="object-cover">
+          <Canvas style={{borderRadius: "60px"}} >
+                <ambientLight />
+                <pointLight position={[10, 10, 10]} />
+                <FadingImageDisplacement position={[0, 0, 0]} scale={[3.5,2,1.2]}/>
+          </Canvas>
+            {/* <Image
               src={heroImg}
               width="616"
               height="617"
@@ -32,7 +39,7 @@ const Hero = () => {
               alt="Hero Illustration"
               loading="eager"
               placeholder="blur"
-            />
+            /> */}
           </div>
         </div>
       </Container>
